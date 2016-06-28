@@ -1,0 +1,22 @@
+{
+  "auth0_domain": "AUTH0_DOMAIN",
+  "auth0_global_client_id":"AUTH_GLOBAL_CLIENT_ID",
+  "auth0_global_client_secret": "AUTH_GLOBAL_CLIENT_SECRET",
+  "email_provider": {
+    "host": "smtp.gmail.com",
+    "port": 465,
+    "secure": true,
+    "auth": {
+        "user": "your-gmail-user-name",
+        "pass": "your-gmail-password"
+    }
+  },
+  "from_email_address": "FROM_EMAIL_ADDRESS",
+  "to_email_address": "TO_EMAIL_ADDRESS",
+  "sendgrid_options": {
+    "auth": {
+        "api_key": "SENDGRID_API_KEY"
+    }
+
+  }
+}
