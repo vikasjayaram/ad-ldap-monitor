@@ -12,14 +12,15 @@ In the `config.json` file, set the following values:
  - `auth0_global_client_id`: Your Global Client Id
  - `auth0_global_client_secret`: Your Global Client Secret
 
- ### Email Credentials
+### Email Credentials
  - `from_email_address`: From Email address
  - `to_email_address`: To Email address. This can be an Array of addresses E.g ["teast@example.com", "test2@example.com"]
  - `api_key`: Sendgrid API Key
 
 > You can get your Global Client Id/Secret your Auth0 Dashboard under Account Settings Advance Tab
 > You can create a Sendgrid API key here: https://sendgrid.com/
-### connectors
+
+### AD / LDAP Connectors Configuration
 
 - Open the connectors.js file
 - You can add in a array of connectors, example
