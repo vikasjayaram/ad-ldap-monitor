@@ -2,7 +2,7 @@
 
 Small tool to monitor the health of your Auth0 AD/LDAP Connector.
 Whenever the ad-ldap-connector is down, this tool will notify the person configured in the
-`to_email_address`.
+`to_email_address` (See below).
 ## Configuration
 
 In the `config.json` file, set the following values:
