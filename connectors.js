@@ -10,6 +10,6 @@ module.exports = [
 
     {
         name: 'OpenLDAP',
-        timeout: 0.1
+        timeout: 2
     }
 ];

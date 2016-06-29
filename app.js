@@ -24,6 +24,7 @@ authenticate(function(err, token) {
   }
 
   connectors.forEach(function (connector) {
+    if (connector.timeout != undefined && connector.timeout > 0) {
       var monitor_connector = new Monitor ({
           token: token,
           connection: connector.name,
@@ -32,6 +33,10 @@ authenticate(function(err, token) {
 
       connectors_list.push(connector.name);
       monitors.push(monitor_connector);
+    } else {
+      logger.error('The timeout value should be defined and must be greater than 0');
+      process.exit(1);
+    }
   });
 });
 
