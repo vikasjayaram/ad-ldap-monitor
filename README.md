@@ -14,10 +14,11 @@ In the `config.json` file, set the following values:
 
 ### Email Credentials
  - `from_email_address`: From Email address
- - `to_email_address`: To Email address. This can be an Array of addresses E.g ["teast@example.com", "test2@example.com"]
+ - `to_email_address`: To Email address. This can be an Array of addresses E.g ["test@example.com", "test2@example.com"]
  - `api_key`: Sendgrid API Key
 
 > You can get your Global Client Id/Secret your Auth0 Dashboard under Account Settings Advance Tab
+
 > You can create a Sendgrid API key here: https://sendgrid.com/
 
 ### AD / LDAP Connectors Configuration
@@ -38,7 +39,7 @@ module.exports = [
 ];
 ```
 - `name`: The name of the connector configured in your Auth0 dashboard
-- `timeout`: How frequently you want to monitor your connection. The `timeout` is in `minutes`
+- `timeout`: How frequently you want to monitor your connection. The `timeout` value is in `minutes`
 
 ## Running the tool
 
